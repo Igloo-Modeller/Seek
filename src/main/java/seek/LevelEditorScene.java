@@ -2,6 +2,8 @@ package seek;
 
 import java.awt.event.*;
 
+import static org.lwjgl.system.windows.User32.VK_SPACE;
+
 public class LevelEditorScene extends Scene {
 
     private boolean changingScene = false;
@@ -17,10 +19,10 @@ public class LevelEditorScene extends Scene {
         
         System.out.println("" + (1.0f / dt) + "FPS");
         
-        if (!changingScene && KeyListener.isKeyPressed(KeyEvent.VK_SPACE)) {
+        if (!changingScene && KeyListener.isKeyPressed (KeyEvent.VK_ENTER)) {
             changingScene = true;
         }
-        if (changingScene && timeToChangeScene > 0) {
+        if (changingScene && timeToChangeScene > 0f) {
             timeToChangeScene -= dt;
             Window.get().r -= dt * 5.0f;
             Window.get().g -= dt * 5.0f;

@@ -24,10 +24,10 @@ public class Window {
     private Window() {
         this.width = 1920;
         this.height = 1080;
-        this.title = "seek";
-        r = 1;
-        g = 1;
-        b = 1;
+        this.title = "Seek";
+        r = 0;
+        g = 0;
+        b = 0;
         a = 1;
         
     }
@@ -115,8 +115,6 @@ public class Window {
             
             if (dt >= 0) 
                 currentScene.update(dt);
-                
-                System.out.println("Space key has been pressed . . . ");
             }
             
             glfwSwapBuffers(glfwWindow);
