@@ -1,7 +1,5 @@
 package seek;
 
-import java.security.*;
-
 import static org.lwjgl.glfw.GLFW.*;
 
 public class KeyListener {

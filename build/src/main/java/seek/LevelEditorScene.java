@@ -2,8 +2,6 @@ package seek;
 
 import java.awt.event.*;
 
-import static org.lwjgl.system.windows.User32.VK_SPACE;
-
 public class LevelEditorScene extends Scene {
 
     private boolean changingScene = false;
